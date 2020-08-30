@@ -40,7 +40,10 @@ sudo echo 'vm.vfs_cache_pressure=50' >>  /etc/sysctl.conf
 
 
 
-#install nginx, git, npm, npx, pm2 and yarn
+#install nodejs, nginx, git, npm, npx, pm2 and yarn
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
 apt-get install git-core -y
 git --version
 #git config --global user.name "Son Nguyen"
